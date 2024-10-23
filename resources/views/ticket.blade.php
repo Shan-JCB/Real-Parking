@@ -56,7 +56,7 @@
     <div class="header">
         Sistema de parqueo Real Plaza
     </div>
-
+    <!-- Hola posho -->
     <p>Servicio de Parqueo</p>
     <p>Av. Giráldez 550, Huancayo 12001</p>
     <!-- Línea separadora -->
