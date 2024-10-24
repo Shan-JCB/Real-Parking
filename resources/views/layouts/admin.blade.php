@@ -46,7 +46,7 @@ Esta plantilla se utiliza para todos los procesos que admin requiera.
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <li class="nav-item d-none d-sm-inline-block">
-                        <a href="{{ secure_url('/') }}" class="nav-link"><i class="bi bi-house-fill"></i> Inicio</a>
+                        <a href="{{ secure_url('home') }}" class="nav-link"><i class="bi bi-house-fill"></i> Inicio</a>
                     </li>
             </ul>
 
