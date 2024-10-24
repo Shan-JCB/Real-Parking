@@ -8,7 +8,7 @@ Esta plantilla se utiliza para todos los procesos que admin requiera.
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>RealParking</title>
-
+    <link rel="icon" href="{{asset('../imagenes/logo.svg')}}" />
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
