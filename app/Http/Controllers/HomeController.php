@@ -25,11 +25,6 @@ class HomeController extends Controller
 
     public function index(Request $request)
     {
-        $pisoSeleccionado = $request->get('piso', 'PISO 1'); // Piso 1 como predeterminado
-    
-        $parqueos = Parqueo::where('piso', $pisoSeleccionado)->get();
-    
-        $pisos = ['PISO 1', 'PISO 2', 'PISO 3', 'PISO EXTERIOR']; // Lista de pisos
-        return view('/home', compact('parqueos', 'pisoSeleccionado', 'pisos'));
+        return view('/');
     }
 }

@@ -17,10 +17,10 @@ Auth::routes();
 
 Route::get('/', function () {return view('auth.login');});
 
-Route::get('/home', [HomeController::class, 'index'])->name('home');
+//Route::get('/home', [HomeController::class, 'index'])->name('home');
 
 //Rutas Admin
-Route::get('/', [AdminController::class, 'index'])->name('tasks.index')->middleware('auth');
+Route::get('/admin', [AdminController::class, 'index'])->name('tasks.index')->middleware('auth');
 
 //Rutas Admin: Usuario
 Route::get('/admin/usuarios', [UsuarioController::class, 'index'])->name('usuarios.index')->middleware('auth','can:usuarios.index');
