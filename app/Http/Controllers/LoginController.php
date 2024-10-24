@@ -18,7 +18,7 @@ class LoginController extends Controller
         $password_user = $request->input('password_user');
 
         // Aquí puedes agregar la lógica para verificar las credenciales
-        if($usuario === 'admin' && $password_user === 'password123') {
+        if($usuario === 'home' && $password_user === 'password123') {
             return redirect()->route('dashboard')->with('success', 'Login correcto');
         } else {
             return back()->withErrors(['credentials' => 'Credenciales incorrectas']);

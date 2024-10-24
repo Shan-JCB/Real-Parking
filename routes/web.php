@@ -17,7 +17,7 @@ Auth::routes();
 
 Route::get('/', function () {return view('auth.login');});
 
-//Route::get('/home', [HomeController::class, 'index'])->name('home');
+Route::get('/home', [AdminController::class, 'index'])->name('tasks.index')->middleware('auth'); // Cambia esto para que use AdminController
 
 //Rutas Admin
 Route::get('/admin', [AdminController::class, 'index'])->name('tasks.index')->middleware('auth');
