@@ -17,16 +17,16 @@ Esta plantilla se utiliza para todos los procesos que admin requiera.
     <!-- Theme style -->
     <link rel="stylesheet" href="{{ asset('dist/css/adminlte.min.css') }}">
     <!-- jQuery -->
-    <script src="{{ url('plugins/jquery/jquery.min.js') }}"></script>
+    <script src="{{ secure_url('plugins/jquery/jquery.min.js') }}"></script>
     <!--Iconos de Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!--Sweetalert2-->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <!--DataTable-->
-    <link rel="stylesheet" href="{{ url('plugins/datatables-bs4/css/dataTables.bootstrap4.min.css') }}">
-    <link rel="stylesheet" href="{{ url('plugins/datatables-responsive/css/responsive.bootstrap4.min.css') }}">
-    <link rel="stylesheet" href="{{ url('plugins/datatables-buttons/css/buttons.bootstrap4.min.css') }}">
+    <link rel="stylesheet" href="{{ secure_url('plugins/datatables-bs4/css/dataTables.bootstrap4.min.css') }}">
+    <link rel="stylesheet" href="{{ secure_url('plugins/datatables-responsive/css/responsive.bootstrap4.min.css') }}">
+    <link rel="stylesheet" href="{{ secure_url('plugins/datatables-buttons/css/buttons.bootstrap4.min.css') }}">
 </head>
 
 <body class="hold-transition sidebar-mini">
@@ -46,7 +46,7 @@ Esta plantilla se utiliza para todos los procesos que admin requiera.
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <li class="nav-item d-none d-sm-inline-block">
-                        <a href="{{ url('/') }}" class="nav-link"><i class="bi bi-house-fill"></i> Inicio</a>
+                        <a href="{{ secure_url('/') }}" class="nav-link"><i class="bi bi-house-fill"></i> Inicio</a>
                     </li>
             </ul>
 
@@ -88,7 +88,7 @@ Esta plantilla se utiliza para todos los procesos que admin requiera.
         <!-- Main Sidebar Container -->
         <aside class="main-sidebar sidebar-dark-primary elevation-4" style="background-color: #1e1e1e;">
             <!-- Brand Logo -->
-            <a href="{{ url('/') }}" class="brand-link">
+            <a href="{{ secure_url('/') }}" class="brand-link">
                 <img src="{{ asset('dist/img/logoReal.png') }}" alt="AdminLTE Logo" class="brand-image elevation-3"
                     style="opacity: .8">
                 <span class="brand-text font-weight-light">Parking</span>
@@ -124,7 +124,7 @@ Esta plantilla se utiliza para todos los procesos que admin requiera.
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="{{ url('/admin/clientes') }}" class="nav-link active"> 
+                                    <a href="{{ secure_url('/admin/clientes') }}" class="nav-link active"> 
                                         <i class="far bi-list-ul nav-icon"></i>
                                         <p>Listado de Clientes</p>
                                     </a>
@@ -143,7 +143,7 @@ Esta plantilla se utiliza para todos los procesos que admin requiera.
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="{{ url('/admin/operadores') }}" class="nav-link active">
+                                    <a href="{{ secure_url('/admin/operadores') }}" class="nav-link active">
                                         <i class="far bi-list-ul nav-icon"></i>
                                         <p>Listado de Operadores</p>
                                     </a>
@@ -162,7 +162,7 @@ Esta plantilla se utiliza para todos los procesos que admin requiera.
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="{{ url('/admin/parqueos') }}" class="nav-link active">
+                                    <a href="{{ secure_url('/admin/parqueos') }}" class="nav-link active">
                                         <i class="far bi bi-calendar-week-fill nav-icon"></i>
                                         <p>Mapeo de vehiculos</p>
                                     </a>
@@ -180,7 +180,7 @@ Esta plantilla se utiliza para todos los procesos que admin requiera.
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="{{ url('/admin/pagos') }}" class="nav-link active">
+                                    <a href="{{ secure_url('/admin/pagos') }}" class="nav-link active">
                                         <i class="far bi-list-ul nav-icon"></i>
                                         <p>Lista de Pagos</p>
                                     </a>
@@ -199,7 +199,7 @@ Esta plantilla se utiliza para todos los procesos que admin requiera.
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="{{ url('/admin/tarifas') }}" class="nav-link active">
+                                    <a href="{{ secure_url('/admin/tarifas') }}" class="nav-link active">
                                         <i class="far bi-list-ul nav-icon"></i>
                                         <p>Lista de Tarifas</p>
                                     </a>
@@ -221,7 +221,7 @@ Esta plantilla se utiliza para todos los procesos que admin requiera.
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="{{ url('/admin/usuarios') }}" class="nav-link active">
+                                    <a href="{{ secure_url('/admin/usuarios') }}" class="nav-link active">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Listado de Usuarios</p>
                                     </a>
@@ -317,22 +317,22 @@ Esta plantilla se utiliza para todos los procesos que admin requiera.
 
     <!-- REQUIRED SCRIPTS -->
     <!-- Bootstrap 4 -->
-    <script src="{{ url('plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ secure_url('plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
     <!-- DataTable -->
-    <script src="{{ url('plugins/datatables/jquery.dataTables.min.js') }}"></script>
-    <script src="{{ url('plugins/datatables-bs4/js/dataTables.bootstrap4.min.js') }}"></script>
-    <script src="{{ url('plugins/datatables-responsive/js/dataTables.responsive.min.js') }}"></script>
-    <script src="{{ url('plugins/datatables-responsive/js/responsive.bootstrap4.min.js') }}"></script>
-    <script src="{{ url('plugins/datatables-buttons/js/dataTables.buttons.min.js') }}"></script>
-    <script src="{{ url('plugins/datatables-buttons/js/buttons.bootstrap4.min.js') }}"></script>
-    <script src="{{ url('plugins/jszip/jszip.min.js') }}"></script>
-    <script src="{{ url('plugins/pdfmake/pdfmake.min.js') }}"></script>
-    <script src="{{ url('plugins/pdfmake/vfs_fonts.js') }}"></script>
-    <script src="{{ url('plugins/datatables-buttons/js/buttons.html5.min.js') }}"></script>
-    <script src="{{ url('plugins/datatables-buttons/js/buttons.print.min.js') }}"></script>
-    <script src="{{ url('plugins/datatables-buttons/js/buttons.colVis.min.js') }}"></script>
+    <script src="{{ secure_url('plugins/datatables/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ secure_url('plugins/datatables-bs4/js/dataTables.bootstrap4.min.js') }}"></script>
+    <script src="{{ secure_url('plugins/datatables-responsive/js/dataTables.responsive.min.js') }}"></script>
+    <script src="{{ secure_url('plugins/datatables-responsive/js/responsive.bootstrap4.min.js') }}"></script>
+    <script src="{{ secure_url('plugins/datatables-buttons/js/dataTables.buttons.min.js') }}"></script>
+    <script src="{{ secure_url('plugins/datatables-buttons/js/buttons.bootstrap4.min.js') }}"></script>
+    <script src="{{ secure_url('plugins/jszip/jszip.min.js') }}"></script>
+    <script src="{{ secure_url('plugins/pdfmake/pdfmake.min.js') }}"></script>
+    <script src="{{ secure_url('plugins/pdfmake/vfs_fonts.js') }}"></script>
+    <script src="{{ secure_url('plugins/datatables-buttons/js/buttons.html5.min.js') }}"></script>
+    <script src="{{ secure_url('plugins/datatables-buttons/js/buttons.print.min.js') }}"></script>
+    <script src="{{ secure_url('plugins/datatables-buttons/js/buttons.colVis.min.js') }}"></script>
     <!-- AdminLTE App -->
-    <script src="{{ url('dist/js/adminlte.min.js') }}"></script>
+    <script src="{{ secure_url('dist/js/adminlte.min.js') }}"></script>
 </body>
 
 </html>
