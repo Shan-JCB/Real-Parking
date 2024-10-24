@@ -48,7 +48,7 @@ Route::get('/admin/clientes/{id}', [ClienteController::class, 'show'])->name('ad
 Route::get('/admin/clientes/{id}/edit', [ClienteController::class, 'edit'])->name('admin.clientes.edit')->middleware('auth','can:admin.clientes.edit');
 Route::put('/admin/clientes/basica/{id}', [ClienteController::class, 'updateBasica'])->name('admin.clientes.updateBasica','can:admin.clientes.updateBasica');
 Route::put('/admin/clientes/relevante/{id}', [ClienteController::class, 'updateRelevante'])->name('admin.clientes.updateRelevante','can:admin.clientes.updateRelevante');
-Route::get('/admin/clientes/{id}/confirm-delete', [ClienteController::class, 'confirmDelete'])->name('admin.clientes.confirmDelete')->middleware('auth','admin.can:clientes.confirmDelete');
+Route::get('/admin/clientes/{id}/confirm-delete', [ClienteController::class, 'confirmDelete'])->name('admin.clientes.confirmDelete')->middleware('auth','can:admin.clientes.confirmDelete');
 Route::delete('/admin/clientes/{id}', [ClienteController::class, 'destroy'])->name('admin.clientes.destroy')->middleware('auth','can:admin.clientes.destroy');
 
 //Rutas Admin: Parqueos
