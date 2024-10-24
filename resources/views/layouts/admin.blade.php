@@ -13,9 +13,9 @@ Esta plantilla se utiliza para todos los procesos que admin requiera.
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="{{ asset('plugins/fontawesome-free/css/all.min.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('plugins/fontawesome-free/css/all.min.css') }}">
     <!-- Theme style -->
-    <link rel="stylesheet" href="{{ asset('dist/css/adminlte.min.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('dist/css/adminlte.min.css') }}">
     <!-- jQuery -->
     <script src="{{ secure_url('plugins/jquery/jquery.min.js') }}"></script>
     <!--Iconos de Bootstrap -->
@@ -89,7 +89,7 @@ Esta plantilla se utiliza para todos los procesos que admin requiera.
         <aside class="main-sidebar sidebar-dark-primary elevation-4" style="background-color: #1e1e1e;">
             <!-- Brand Logo -->
             <a href="{{ secure_url('/') }}" class="brand-link">
-                <img src="{{ asset('dist/img/logoReal.png') }}" alt="AdminLTE Logo" class="brand-image elevation-3"
+                <img src="{{ secure_asset('dist/img/logoReal.png') }}" alt="AdminLTE Logo" class="brand-image elevation-3"
                     style="opacity: .8">
                 <span class="brand-text font-weight-light">Parking</span>
             </a>
@@ -99,7 +99,7 @@ Esta plantilla se utiliza para todos los procesos que admin requiera.
                 <!-- Sidebar user panel (optional) -->
                 <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                     <div class="image">
-                        <img src="{{ asset('imagenes/user_icon_def.png') }}" class="img-circle elevation-2"
+                        <img src="{{ secure_asset('imagenes/user_icon_def.png') }}" class="img-circle elevation-2"
                             alt="User Image" style="width: 50px; height: 50px;">
                     </div>
                     <div class="info">
