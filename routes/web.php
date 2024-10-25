@@ -8,16 +8,23 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\UsuarioController;
 use App\Http\Controllers\OperadorController;
 use App\Http\Controllers\ClienteController;
+use App\Http\Controllers\ContactanosController;
 use App\Http\Controllers\ParqueoController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\PagoController;
 use App\Http\Controllers\TarifaController;
+use App\Mail\ContactanosMailable;
+use Illuminate\Support\Facades\Mail;
 
 Auth::routes();
 
 Route::get('/', function () {return view('auth.login');});
 
 Route::get('/home', [AdminController::class, 'index'])->name('tasks.index')->middleware('auth'); // Cambia esto para que use AdminController
+
+//Correo
+Route::get('contactanos', [ContactanosController::class, 'index'])->name('contactanos.index')->middleware('auth');
+Route::post('contactanos', [ContactanosController::class, 'store'])->name('contactanos.store')->middleware('auth');
 
 //Rutas Admin
 Route::get('/admin', [AdminController::class, 'index'])->name('tasks.index')->middleware('auth');

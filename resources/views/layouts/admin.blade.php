@@ -48,6 +48,10 @@ Esta plantilla se utiliza para todos los procesos que admin requiera.
                     <li class="nav-item d-none d-sm-inline-block">
                         <a href="{{ secure_url('home') }}" class="nav-link"><i class="bi bi-house-fill"></i> Inicio</a>
                     </li>
+                    <li class="nav-item d-none d-sm-inline-block">
+                        <a href="{{ secure_url('contactanos') }}" class="nav-link {{request()->routeIs('contactanos.index') ? 'active' : ''}}">
+                            <i class="bi bi-chat-dots-fill"></i> Contactanos</a>
+                    </li>
             </ul>
 
             <!-- Right navbar links -->
